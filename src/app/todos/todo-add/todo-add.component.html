@@ -1,0 +1,11 @@
+<header class="header">
+    <h1>To Do List</h1>
+    <input class="new-todo" placeholder="Añade un to do" [formControl]="txtInput" 
+    (keyup.enter)="agregar()"
+    autofocus>
+  </header>
+
+
+  <!-- [] en una etiqueta indican que lo estás asociando a una propiedad de la clase -->
+  <!-- (keyup.enter)="agregar()"
+  Disparamos el evento keyup con la tecla enter que llame a la función agregar -->
